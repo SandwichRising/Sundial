@@ -1,7 +1,9 @@
 # SUNDIAL
 
 
-### An Euclidian Drum Machine focused on MIDI (instead of CV) originally inspired by the [Qu-Bit Pulsar](https://www.qubitelectronix.com/shop/pulsar). 
+## An Euclidian Drum Machine focused on MIDI (instead of CV) 
+
+### Originally inspired by the [Qu-Bit Pulsar](https://www.qubitelectronix.com/shop/pulsar). 
 
 
 ![drum machine top](./media/sundial_top.jpg)
@@ -37,7 +39,7 @@ The firmware spans 3 versions:
 
 ### Version 1
 
-![version 1 original breadboard](./media/v1_breadboard.jpg)
+![version 1 original breadboard](./media/v1_breadboard.jpeg)
 Version 1 was originally breadboarded using an Arduino UNO. It was then handwired using an Arduino Pro Micro to utilize built-in USB support for MIDI usage using protoboard. A 6N138 optoisolater protects the MIDI connection (as per MIDI specifications) and 6x 74HC595 shift registers control the red, blue, and green signals to the LED Ring. A 74HC4051 multiplexer was used to sweep the button connections, allowing for only 4 pins to be used to monitor the 8 buttons (3 select pins and one data return pin). The VS1053B circuit was made following Adafruit designs to provide clean audio, with its own combination 3.3v and 1.8v power supply. A 24LC256 EEPROM was used to save Patches over an I2C connection.
 
 ![v1 handwired exposed circuits](./media/v1_handwire.jpg)
@@ -65,6 +67,7 @@ The ICSP header (used to program the ATmega32u4) did not include pulldown resist
 
 
 Silkscreen artwork depicting the spacejunk floating in orbit around earth was added to the area around the circle of 74HC595's, however this silkscreen test did not turn out as appealing as intended and was scrapped in subsequent designs.
+
 ![spacejunk artwork test](./media/spacejunk.png)
 
 
@@ -96,11 +99,15 @@ Though running on overall version 3 firmware, the most current hardware design i
 
 
 **V3 PCB Render**
-![v3 circuit board render front](./media/3d_front.png) | ![v3 circuit board render back](./media/3d_rear.png)
+![v3 circuit board render front](./media/3d_front_v3.png)
+
+![v3 circuit board render back](./media/3d_rear_v3.png)
 
 
 **V3 Printed Renders for Test Fitting**
-![v3 circuit board testfit front](./media/v3_testfit1.png) | ![v3 circuit board testfit back](./media/v3_testfit2.png)
+![v3 circuit board testfit front](./media/v3_testfit1.jpg)
+
+![v3 circuit board testfit back](./media/v3_testfit2.jpg)
 
 
 ## Shield
