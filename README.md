@@ -85,7 +85,7 @@ Version 3 made significant changes to the design. The 74HC595's were removed and
 ![version 3 breadboard](./media/v3_breadboard.jpg)
 
 
-Version 3 also added many different expansion ports to the design. Numerous breakout ports were added to unused microcontroller pins and some data pins, which would easily allow them to be manually soldered and repurposed after production. Solderable ports were added to be able to interrupt the power delivery system in order to optionally add a rechargeable battery in the future. Additionally, two SPI based expansion buses was added, which allowed for adding removable 'shield' daughterboards for increased functionality. A FATcat daughterboard to save/load backups to SD cards was designed, breadboarded, and successfully tested using this SPI bus. 
+Version 3 also added many different expansion ports to the design. Numerous breakout ports were added to unused microcontroller pins and some data pins, which would easily allow them to be manually soldered and repurposed after production. Solderable ports were added to be able to interrupt the power delivery system in order to optionally add a rechargeable battery in the future. A power switch was also added. Additionally, two SPI based expansion buses was added, which allowed for adding removable 'shield' daughterboards for increased functionality. A FATcat daughterboard to save/load backups to SD cards was designed, breadboarded, and successfully tested using this SPI bus. 
 
 Though running on overall version 3 firmware, the most current hardware design is separately considered the version 4 PCB. This github will continue the convention of referring to the firmware's version instead of the PCB's label. This circuit design has been breadboarded, tested for operation, and designed in EasyEDA, however it has not been produced as a PCB as the design was intended to be ported next to a SAMD21 processor. The exported EasyEDA .json file for the version 3 design as well as the BOM for all the components have been provided in [the assets section](./assets/) of this github.
 
@@ -103,6 +103,8 @@ Though running on overall version 3 firmware, the most current hardware design i
 
 ![v3 circuit board render back](./media/3d_rear_v3.png)
 
+
+These testfit renders are from an earlier outdated version 3 design which used TRS jacks instead of full sized MIDI DIN jacks. A user could change between TRS Type A and TRS Type B by flipping switches inside the device, allowing easy use with different brands of equipment. Other layout changes were made as well in the more modern version of the design. Eventually the decision was made to continue to use full sized DIN jacks instead.
 
 **V3 Printed Renders for Test Fitting**
 ![v3 circuit board testfit front](./media/v3_testfit1.jpg)
