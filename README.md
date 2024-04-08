@@ -3,12 +3,21 @@
 
 ## An Euclidian Drum Machine focused on MIDI (instead of CV) 
 
-### Originally inspired by the [Qu-Bit Pulsar](https://www.qubitelectronix.com/shop/pulsar). 
+Originally inspired by the [Qu-Bit Pulsar](https://www.qubitelectronix.com/shop/pulsar). 
+
+<br>
+
+### Youtube Demo Video:
+
+[![Sundial Demo](https://img.youtube.com/vi/sayqRz1wMQs/0.jpg)](https://www.youtube.com/watch?v=sayqRz1wMQs)
+
+<br>
+<br>
 
 
-![drum machine top](./media/sundial_top.jpg)
+<img src="./media/sundial_top.jpg" width="750">
 
-![drum machines](./media/sundial.jpg)
+<img src="./media/sundial.jpg" width="750">
 
 
 The goal of the Sundial was to create a working proof-of-concept of a feature-rich MIDI device from scratch, and to design my first PCB around this concept. With the success of the intended goals of the project, the active development has ended with the version 3 breadboarded version. Multiple versions of the software and hardware are being shared here for reference and to assist anyone taking on a similar project. 
@@ -39,10 +48,10 @@ The firmware spans 3 versions:
 
 ### Version 1
 
-![version 1 original breadboard](./media/v1_breadboard.jpeg)
+<img src="./media/v1_breadboard.jpeg" width="500">
 Version 1 was originally breadboarded using an Arduino UNO. It was then handwired using an Arduino Pro Micro to utilize built-in USB support for MIDI usage using protoboard. A 6N138 optoisolater protects the MIDI connection (as per MIDI specifications) and 6x 74HC595 shift registers control the red, blue, and green signals to the LED Ring. A 74HC4051 multiplexer was used to sweep the button connections, allowing for only 4 pins to be used to monitor the 8 buttons (3 select pins and one data return pin). The VS1053B circuit was made following Adafruit designs to provide clean audio, with its own combination 3.3v and 1.8v power supply. A 24LC256 EEPROM was used to save Patches over an I2C connection.
 
-![v1 handwired exposed circuits](./media/v1_handwire.jpg)
+<img src="./media/v1_handwire.jpg" width="750">
 
 Once the handwired design was proven it was used to create the schematic and layout for the version 1 PCB. This was done in EasyEDA, an online tool provided by the PCB fabricator, JLCPCB. Unfortunately, the online backups were corrupted and only earlier incomplete .png image versions of the schematic and layout were able to be recovered for this collection. A photograph of the hardcopy final schematic is preserved [here](./media/v1_hardcopy_schematic).
 
@@ -55,7 +64,7 @@ Once the handwired design was proven it was used to create the schematic and lay
 
 
 **V1 PCB**
-![v1 circuit board](./media/v1_pcb.jpg)
+<img src="./media/v1_pcb.jpg" width="750">
 
 
 **V1 Prototypes**
